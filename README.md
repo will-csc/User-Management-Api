@@ -2,7 +2,7 @@
 
 Simple REST API for managing users. Provides endpoints to create, read, update and delete (or deactivate) users with input validation and consistent responses.
 
-Note: This README is intentionally written in English to follow common open-source practices and enable broader collaboration.
+*Note: This README is intentionally written in English to follow common open-source practices and enable broader collaboration.*
 
 ## Features
 
@@ -21,40 +21,11 @@ Note: This README is intentionally written in English to follow common open-sour
 
 ## API Overview
 
-- POST `/users` — Create a new user
-  - Example body:
-    ```json
-    {
-      "name": "Jane Doe",
-      "email": "jane.doe@example.com",
-      "password": "your-strong-password"
-    }
-    ```
-- GET `/users` — List users (supports basic filtering/pagination)
-- GET `/users/{id}` — Get a user by ID
-- PATCH `/users/{id}` — Update one or more fields
-- DELETE `/users/{id}` — Delete or deactivate a user
+Developing...
 
 ## Getting Started (local)
 
-1) Clone the repository
-   ```bash
-   git clone https://github.com/will-csc/User-Management-Api
-   cd User-Management-Api
-   ```
-2) Create a virtual environment and install dependencies
-   ```bash
-   # Windows (PowerShell)
-   py -m venv .venv
-   .venv\\Scripts\\activate
-   pip install -r requirements.txt
-   ```
-3) Configure environment variables (examples)
-   - `DATABASE_URL=postgresql://user:password@localhost:5432/your_db`
-   - `PORT=8000`
-4) Run the application
-   - Use the project's main entry point (e.g., `python app.py`) or your chosen framework's runner.
-5) Test with Postman/Insomnia or via automated tests if available.
+Developing...
 
 ## Project Status
 
@@ -70,10 +41,3 @@ Initial scope includes core CRUD plus basic validation. Additional features (aut
 
 Group: Lost Birds
 
-## Contributing
-
-Issues and pull requests are welcome. Please open a discussion before major changes.
-
-## License
-
-Choose and state a license here (e.g., MIT).
