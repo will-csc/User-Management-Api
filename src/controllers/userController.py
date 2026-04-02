@@ -49,5 +49,5 @@ class UserController:
             return jsonify({'message': 'Usuário não encontrado'}), 404
         
         users = [u for u in users if u['id'] != user_id]
-        return jsonify({'message': 'Usuário deletado'}), 200
+        return jsonify({'message': 'Usuário deletado com sucesso'}), 200
     
