@@ -1,0 +1,160 @@
+AC3 – ATIVIDADE HANDS-ON DE QUALITY ASSURANCE
+Valor: 1,0 ponto
+Entrega: até às 22h (mesmo dia da aula)
+Formato: em grupo
+
+1. Organização da Atividade
+A atividade deverá ser realizada em grupo, utilizando os mesmos grupos definidos para o Projeto Final.
+O desenvolvimento deverá ocorrer durante o horário da aula.
+O prazo final para entrega será até às 22h do mesmo dia.
+A entrega deverá ser realizada no AVA.
+Na próxima aula, cada grupo deverá apresentar:
+dificuldades encontradas
+dúvidas técnicas
+pontos que não conseguiram evoluir
+
+2. Objetivo
+Nesta atividade prática, cada grupo deverá aplicar os conceitos de Quality Assurance diretamente no seu projeto.
+O objetivo é:
+estruturar testes no próprio sistema
+validar funcionalidades
+identificar falhas
+iniciar automação de testes
+evoluir o projeto final de forma prática
+
+3. Organização do Grupo
+Antes de iniciar, o grupo deve dividir as responsabilidades:
+Integrante 1: execução do sistema (protótipo)
+Integrante 2: execução dos testes
+Integrante 3: documentação
+Integrante 4: coleta de evidências
+Integrante 5: análise de bugs e melhorias
+Todos os integrantes devem participar ativamente.
+
+4. Passo a Passo da Atividade
+PASSO 1 – Descrição do sistema
+Tempo sugerido: 10 minutos
+Registrar no documento:
+nome do sistema
+objetivo
+o que o sistema faz
+como funciona (resumo do fluxo)
+
+PASSO 2 – Definição do escopo dos testes
+Tempo sugerido: 10 minutos
+Responder:
+o que será testado nesta atividade
+quais partes do sistema serão validadas
+quais tipos de teste serão aplicados
+Exemplos:
+teste funcional
+teste de API
+validação de dados
+testes com erro
+
+PASSO 3 – Criação dos casos de teste
+Tempo sugerido: 20 minutos
+Criar no mínimo 5 casos de teste.
+Cada caso deve conter:
+ID
+nome
+objetivo
+entrada
+passos
+resultado esperado
+
+PASSO 4 – Execução dos testes
+Tempo sugerido: 30 minutos
+Executar os testes no sistema do próprio grupo.
+Registrar:
+se passou ou falhou
+comportamento observado
+comparação com o resultado esperado
+
+PASSO 5 – Registro de evidências
+Tempo sugerido: 10 minutos
+Coletar evidências:
+prints do sistema
+prints do Postman
+prints do terminal
+prints de erros
+
+PASSO 6 – Testes com erro proposital
+Tempo sugerido: 15 minutos
+Executar testes com entradas inválidas:
+campo vazio
+tipo de dado incorreto
+valor inválido
+dados incompletos
+Registrar o comportamento do sistema.
+
+PASSO 7 – Testes de API (quando aplicável)
+Tempo sugerido: 15 minutos
+Se houver API:
+2 testes válidos
+2 testes inválidos
+Validar:
+status code
+resposta
+Se não houver API, aplicar a mesma lógica nas entradas do sistema.
+
+PASSO 8 – Automação de testes
+Tempo sugerido: 20 minutos
+Criar no mínimo 2 testes automatizados.
+Exemplo em Python:
+import requests
+response = requests.post("http://localhost:5000", json={"valor": 10})
+assert response.status_code == 200
+Exemplo no Postman:
+pm.test("Status 200", function () {
+pm.response.to.have.status(200);
+});
+
+PASSO 9 – Identificação de bugs
+Tempo sugerido: 10 minutos
+Registrar no mínimo 2 bugs.
+Para cada bug:
+título
+descrição
+como reproduzir
+impacto
+sugestão de correção
+
+PASSO 10 – Sugestões de melhoria
+Tempo sugerido: 10 minutos
+Registrar:
+2 melhorias técnicas
+1 melhoria geral (uso, organização ou clareza)
+
+PASSO 11 – Revisão final
+Tempo sugerido: 10 minutos
+Conferir se o grupo possui:
+descrição do sistema
+escopo dos testes
+5 casos de teste
+execução registrada
+evidências
+testes com erro
+testes de API (se houver)
+2 testes automatizados
+2 bugs
+melhorias
+
+5. Entregáveis (Obrigatório)
+Cada grupo deverá enviar no AVA:
+Documento com todas as etapas, com evidências (prints).
+Scripts usados em PYTHON(.py)
+
+6. Critérios de Avaliação (AC3 – 1,0 ponto)
+organização e clareza do material
+execução real dos testes
+qualidade das evidências
+identificação de falhas
+coerência das melhorias propostas
+
+7. Observações Finais
+a atividade deve ser realizada no próprio projeto do grupo
+o foco é testar, não apenas descrever
+encontrar falhas faz parte do trabalho de QA
+projetos sem evidências terão redução na nota
+todos os integrantes devem participar
