@@ -1,0 +1,19 @@
+Comando executado:
+python -m unittest discover -s tests -v
+
+Saida registrada:
+test_get_unknown_user_returns_not_found (test_user_routes.UserRoutesTestCase.test_get_unknown_user_returns_not_found) ... ok
+test_get_users_returns_success (test_user_routes.UserRoutesTestCase.test_get_users_returns_success) ... ok
+test_post_users_returns_created (test_user_routes.UserRoutesTestCase.test_post_users_returns_created) ... ok
+test_post_users_with_empty_payload_returns_bad_request (test_user_routes.UserRoutesTestCase.test_post_users_with_empty_payload_returns_bad_request) ... ok
+test_deactivate_user_removes_user_from_active_listing (test_user_service.UserServiceTestCase.test_deactivate_user_removes_user_from_active_listing) ... ok
+test_register_user_normalizes_email_and_hides_password_hash (test_user_service.UserServiceTestCase.test_register_user_normalizes_email_and_hides_password_hash) ... ok
+test_register_user_rejects_duplicate_email (test_user_service.UserServiceTestCase.test_register_user_rejects_duplicate_email) ... ok
+test_register_user_rejects_invalid_email (test_user_service.UserServiceTestCase.test_register_user_rejects_invalid_email) ... ok
+test_register_user_rejects_weak_password (test_user_service.UserServiceTestCase.test_register_user_rejects_weak_password) ... ok
+test_update_user_changes_name_and_email (test_user_service.UserServiceTestCase.test_update_user_changes_name_and_email) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.355s
+
+OK
